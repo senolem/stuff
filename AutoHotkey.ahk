@@ -1,17 +1,17 @@
-F12::
+F12:: ; Set equalize to normal bass level
  FileDelete, C:\Program Files\EqualizerAPO\config\config.txt
  FileAppend, Include: C:\Program Files\EqualizerAPO\config\normalbass.txt, C:\Program Files\EqualizerAPO\config\config.txt
 return
-F11::
+F11:: ; Set equalize to middle bass level
  FileDelete, C:\Program Files\EqualizerAPO\config\config.txt
  FileAppend, Include: C:\Program Files\EqualizerAPO\config\middlebass.txt, C:\Program Files\EqualizerAPO\config\config.txt
 return
-F10::
+F10:: ; Set equalize to none bass level
  FileDelete, C:\Program Files\EqualizerAPO\config\config.txt
  FileAppend, Include: C:\Program Files\EqualizerAPO\config\nobass.txt, C:\Program Files\EqualizerAPO\config\config.txt
 return
 
-;F2::GoSub,MousePosition
+F2::GoSub,MousePosition ; XY pos tooltip
 
 MousePosition:
 Coordmode,Tooltip,Relative
@@ -27,21 +27,10 @@ SetTimer,ClearToolTip,Off
 ToolTip,
 Return
 
-; F7::
-;FileDelete, C:\Users\baura\Documents\DofusPouletFlemmards\pairing.ini
-;FileCopy, C:\Users\baura\Documents\DofusPouletFlemmards\Drop\pairing.ini, C:\Users\baura\Documents\DofusPouletFlemmards\pairing.ini
-;Run, F:\Softs\Dofus Poulet Flemmards\DofusPouletFlemmards.exe
-;return
-;F8::
-;FileDelete, C:\Users\baura\Documents\DofusPouletFlemmards\pairing.ini
-;FileCopy, C:\Users\baura\Documents\DofusPouletFlemmards\Combat\pairing.ini, C:\Users\baura\Documents\DofusPouletFlemmards\pairing.ini
-;Run, F:\Softs\Dofus Poulet Flemmards\DofusPouletFlemmards.exe
-;return
-
-F9::
+F9:: ; Mute active window
 Run, D:\Softs\NirCMD\nircmd.lnk
 return
 
-^SPACE::
+^SPACE:: ; Set active application on top
 Winset, Alwaysontop, , A
 return

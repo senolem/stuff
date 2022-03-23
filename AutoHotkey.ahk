@@ -1,12 +1,12 @@
-F12:: ; Set equalize to normal bass level
+F12:: ; Set equalizer to normal bass level
  FileDelete, C:\Program Files\EqualizerAPO\config\config.txt
  FileAppend, Include: C:\Program Files\EqualizerAPO\config\normalbass.txt, C:\Program Files\EqualizerAPO\config\config.txt
 return
-F11:: ; Set equalize to middle bass level
+F11:: ; Set equalizer to middle bass level
  FileDelete, C:\Program Files\EqualizerAPO\config\config.txt
  FileAppend, Include: C:\Program Files\EqualizerAPO\config\middlebass.txt, C:\Program Files\EqualizerAPO\config\config.txt
 return
-F10:: ; Set equalize to none bass level
+F10:: ; Set equalizer to none bass level
  FileDelete, C:\Program Files\EqualizerAPO\config\config.txt
  FileAppend, Include: C:\Program Files\EqualizerAPO\config\nobass.txt, C:\Program Files\EqualizerAPO\config\config.txt
 return
